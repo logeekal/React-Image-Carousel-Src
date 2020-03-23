@@ -1,30 +1,40 @@
 {
-  "name": "image-carousel",
-  "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "src/index.js",
-  "dependencies": {
-    "@types/prop-types": "15.7.3",
-    "mini-debounce": "1.0.6",
-    "prop-types": "15.7.2",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "react-scripts": "3.0.1"
-  },
-  "devDependencies": {
-    "typescript": "3.3.3"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+	"name": "react-image-carousel",
+	"version": "1.0.0",
+	"description": "This is a responsive carousel created as a react component.",
+	"keywords": [
+		"carousel",
+		"image carousel",
+		"react",
+		"component",
+		"react image carousel",
+		"image carousel for react"
+	],
+	"main": "src/index.js",
+	"dependencies": {
+		"@types/prop-types": "15.7.3",
+		"babel-cli": "^6.26.0",
+		"mini-debounce": "1.0.6",
+		"node-sass": "^4.13.1",
+		"prop-types": "15.7.2",
+		"react": "16.12.0",
+		"react-dom": "16.12.0",
+		"react-scripts": "3.0.1"
+	},
+	"devDependencies": {
+		"typescript": "3.3.3"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject",
+		"publish:npm": "rm -rf dist && mkdir dist && set NODE_ENV=test &&  babel ./src -d dist --copy-files"
+	},
+	"browserslist": [
+		">0.2%",
+		"not dead",
+		"not ie <= 11",
+		"not op_mini all"
+	]
 }
